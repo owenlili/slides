@@ -1,0 +1,12 @@
+{
+  "lecture01": {
+    "title": "Lecture 1: Introduction to agentic systems",
+    "url": "https://web.stanford.edu/class/cs329z/slides/lecture01.pdf",
+    "pages": 71
+  },
+  "lecture02": {
+    "title": "Lecture 2: LLMs for Builders",
+    "url": "https://web.stanford.edu/class/cs329z/slides/lecture02.pdf",
+    "pages": 176
+  }
+}

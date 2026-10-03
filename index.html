@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Slide redirect</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1d1d1b; --muted: #6b6b66; --accent: #8c1515; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1b1b1a; --fg: #ececea; --muted: #a3a39e; --accent: #e06c6c; }
+  }
+  body { margin: 0; padding: 32px 16px; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, sans-serif; }
+  main { max-width: 40em; margin: 0 auto; }
+  a { color: var(--accent); }
+  code { color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <p id="status">Opening slides…</p>
+</main>
+<script>
+// Usage: ?doc=lecture01&page=18 redirects to that deck's PDF at page 18.
+// Deck URLs live only in slides.json; change a URL there when a deck moves.
+const params = new URLSearchParams(location.search);
+const doc = params.get("doc");
+const page = parseInt(params.get("page"), 10);
+const status = document.getElementById("status");
+
+function show(message, decks) {
+  status.textContent = message;
+  if (!decks) return;
+  const list = document.createElement("ul");
+  for (const [key, deck] of Object.entries(decks)) {
+    const item = document.createElement("li");
+    const link = document.createElement("a");
+    link.href = deck.url;
+    link.textContent = deck.title || key;
+    item.append(link, " ", Object.assign(document.createElement("code"), { textContent: key }));
+    list.append(item);
+  }
+  status.after(list);
+}
+
+fetch("slides.json", { cache: "no-cache" })
+  .then((response) => response.json())
+  .then((decks) => {
+    const deck = decks[doc];
+    if (!deck) return show(doc ? `Unknown deck "${doc}". Available decks:` : "Available decks:", decks);
+    location.replace(page > 0 ? `${deck.url}#page=${page}` : deck.url);
+  })
+  .catch(() => show("Could not load the list of slide decks."));
+</script>
+</body>
+</html>
