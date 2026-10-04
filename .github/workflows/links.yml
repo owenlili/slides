@@ -1,13 +1,13 @@
-# Weekly check that every deck URL in slides.json still opens.
-# A deck that moved (e.g. now returns 404) opens an issue.
-name: Check slide URLs
+# Daily check that every URL in links.json still opens.
+# A broken URL opens an issue, or updates the open one if it already exists.
+name: Check links
 
 on:
   schedule:
-    - cron: "0 1 * * 1" # Mondays 01:00 UTC (09:00 Taiwan)
+    - cron: "0 23 * * *" # Every day 23:00 UTC (07:00 Taiwan)
   push:
     paths:
-      - slides.json
+      - links.json
   workflow_dispatch:
 
 jobs:
@@ -19,16 +19,27 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
+      # Some sites (e.g. ojs.aaai.org) can take over 30 seconds to respond.
       - id: lychee
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --no-progress slides.json
+          args: --no-progress --timeout 60 --max-retries 3 links.json
           output: ./lychee/out.md
           fail: false
+
+      # Reuse the open issue so a link that stays broken doesn't open a new issue every day.
+      - id: open-issue
+        if: steps.lychee.outputs.exit_code != 0
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          number=$(gh issue list --repo "$GITHUB_REPOSITORY" --label broken-links --state open --json number --jq '.[0].number // empty')
+          echo "number=$number" >> "$GITHUB_OUTPUT"
 
       - if: steps.lychee.outputs.exit_code != 0
         uses: peter-evans/create-issue-from-file@v6
         with:
-          title: 投影片網址失效
+          title: 網址失效
           content-filepath: ./lychee/out.md
           labels: broken-links
+          issue-number: ${{ steps.open-issue.outputs.number }}

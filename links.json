@@ -1,0 +1,88 @@
+{
+  "course": [
+    {
+      "title": "Stanford CS 329Z: Engineering AI Agents",
+      "url": "https://cs329z.stanford.edu/"
+    },
+    {
+      "title": "Lecture 1: Introduction to agentic systems",
+      "url": "https://web.stanford.edu/class/cs329z/slides/lecture01.pdf"
+    },
+    {
+      "title": "Lecture 2: LLMs for Builders",
+      "url": "https://web.stanford.edu/class/cs329z/slides/lecture02.pdf"
+    },
+    {
+      "title": "Lecture 3: RAG + Agents",
+      "url": "https://web.stanford.edu/class/cs329z/slides/lecture03.pdf"
+    }
+  ],
+  "papers": [
+    {
+      "title": "Self-RAG",
+      "url": "https://arxiv.org/abs/2310.11511"
+    },
+    {
+      "title": "CRAG",
+      "url": "https://arxiv.org/abs/2401.15884"
+    },
+    {
+      "title": "Search-R1",
+      "url": "https://arxiv.org/abs/2503.09516"
+    },
+    {
+      "title": "Attacking Vision-Language Computer Agents via Pop-ups (ACL 2025)",
+      "url": "https://aclanthology.org/2025.acl-long.411.pdf"
+    },
+    {
+      "title": "VisualWebArena (ACL 2024)",
+      "url": "https://aclanthology.org/2024.acl-long.50/"
+    },
+    {
+      "title": "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena (NeurIPS 2023)",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/91f18a1287b398d378ef22505bf41832-Abstract-Datasets_and_Benchmarks.html"
+    },
+    {
+      "title": "WASP (NeurIPS 2025)",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/1c9818387f5dd0a0bc151214660f059d-Abstract-Datasets_and_Benchmarks_Track.html"
+    },
+    {
+      "title": "MINJA (NeurIPS 2025)",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/42a97bbd9844d2bf68596730af80bcdf-Abstract-Conference.html"
+    },
+    {
+      "title": "MCPTox (AAAI)",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/40895"
+    },
+    {
+      "title": "AutoMetrics (OpenReview)",
+      "url": "https://openreview.net/forum?id=ymJuBifPUy"
+    },
+    {
+      "title": "AutoMetrics (arXiv)",
+      "url": "https://arxiv.org/abs/2512.17267"
+    },
+    {
+      "title": "AutoMetrics (arXiv HTML)",
+      "url": "https://arxiv.org/html/2512.17267v1"
+    },
+    {
+      "title": "AutoLibra (OpenReview)",
+      "url": "https://openreview.net/forum?id=4BjGVZ7Bxn"
+    }
+  ],
+  "articles": [
+    {
+      "title": "Route Context Just in Time",
+      "url": "https://github.com/lopopolo/harness-engineering/blob/trunk/docs/just-in-time-context/README.md"
+    },
+    {
+      "title": "Demystifying Evals for AI Agents (Anthropic)",
+      "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents"
+    },
+    {
+      "title": "Chromium multi-process architecture",
+      "url": "https://www.chromium.org/developers/design-documents/multi-process-architecture/"
+    }
+  ]
+}

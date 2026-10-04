@@ -1,13 +1,21 @@
-# Slide redirect
+# Link check
 
-Stable links to course slide PDFs, opened at a given page.
+Checks every day that the external links cited in the [CS 329Z learning notes](https://github.com/bohr109/cs329z-learning-notes) still open.
 
-```
-https://owenlili.github.io/slides/?doc=lecture01&page=18
-```
+## What is checked
 
-redirects to page 18 of the deck listed as `lecture01` in [slides.json](slides.json). Leave out `page` to open the deck at its first page.
+[links.json](links.json) lists the links, grouped by type:
 
-When a deck moves, change its `url` in `slides.json`. Every link that uses this page follows the new URL; nothing else needs to change. A weekly workflow checks that each URL in `slides.json` still opens and opens an issue if one does not.
+- `course`: the course site and lecture slides.
+- `papers`: papers cited in the notes.
+- `articles`: articles and technical documents cited in the notes.
 
-This repository stores only links to slides that the course publishes; it does not host the slides.
+To check another link, add an entry with a `title` and `url` to the right group.
+
+## When it runs
+
+A [workflow](.github/workflows/links.yml) checks every URL in `links.json` each day at 07:00 Taiwan time (23:00 UTC), and whenever `links.json` changes. It can also be started from the Actions tab.
+
+If a URL no longer opens, the workflow opens an issue labeled `broken-links`, or updates that issue if it is already open. Close the issue after fixing or removing the link.
+
+This repository stores only links; it does not host the slides, papers, or articles.
