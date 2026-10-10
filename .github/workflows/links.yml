@@ -1,5 +1,6 @@
 # Daily check that every URL in links.json still opens.
 # A broken URL opens an issue, or updates the open one if it already exists.
+# The issue is closed once every URL opens again.
 name: Check links
 
 on:
@@ -29,7 +30,6 @@ jobs:
 
       # Reuse the open issue so a link that stays broken doesn't open a new issue every day.
       - id: open-issue
-        if: steps.lychee.outputs.exit_code != 0
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -43,3 +43,9 @@ jobs:
           content-filepath: ./lychee/out.md
           labels: broken-links
           issue-number: ${{ steps.open-issue.outputs.number }}
+
+      - if: steps.lychee.outputs.exit_code == 0 && steps.open-issue.outputs.number != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NUMBER: ${{ steps.open-issue.outputs.number }}
+        run: gh issue close "$NUMBER" --repo "$GITHUB_REPOSITORY" --comment "所有網址都能正常開啟了。"

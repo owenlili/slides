@@ -16,6 +16,6 @@ To check another link, add an entry with a `title` and `url` to the right group.
 
 A [workflow](.github/workflows/links.yml) checks every URL in `links.json` each day at 07:00 Taiwan time (23:00 UTC), and whenever `links.json` changes. It can also be started from the Actions tab.
 
-If a URL no longer opens, the workflow opens an issue labeled `broken-links`, or updates that issue if it is already open. Close the issue after fixing or removing the link.
+If a URL no longer opens, the workflow opens an issue labeled `broken-links`, or updates that issue if it is already open. Once every URL opens again, the workflow closes the issue.
 
 This repository stores only links; it does not host the slides, papers, or articles.
