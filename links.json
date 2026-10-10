@@ -15,6 +15,14 @@
     {
       "title": "Lecture 3: RAG + Agents",
       "url": "https://web.stanford.edu/class/cs329z/slides/lecture03.pdf"
+    },
+    {
+      "title": "Lecture 4: Tool Use",
+      "url": "https://web.stanford.edu/class/cs329z/slides/lecture04.pdf"
+    },
+    {
+      "title": "Lecture 5: Frameworks and Orchestration",
+      "url": "https://web.stanford.edu/class/cs329z/slides/lecture05.pdf"
     }
   ],
   "papers": [
@@ -69,6 +77,22 @@
     {
       "title": "AutoLibra (OpenReview)",
       "url": "https://openreview.net/forum?id=4BjGVZ7Bxn"
+    },
+    {
+      "title": "τ-bench",
+      "url": "https://arxiv.org/abs/2406.12045"
+    },
+    {
+      "title": "ToolkenGPT (NeurIPS 2023)",
+      "url": "https://papers.nips.cc/paper_files/paper/2023/file/8fd1a81c882cd45f64958da6284f4a3f-Paper-Conference.pdf"
+    },
+    {
+      "title": "BFCL (ICML 2025)",
+      "url": "https://proceedings.mlr.press/v267/patil25a.html"
+    },
+    {
+      "title": "Meta-Harness",
+      "url": "https://arxiv.org/pdf/2603.28052"
     }
   ],
   "articles": [
@@ -83,6 +107,26 @@
     {
       "title": "Chromium multi-process architecture",
       "url": "https://www.chromium.org/developers/design-documents/multi-process-architecture/"
+    },
+    {
+      "title": "OpenAPI Specification",
+      "url": "https://spec.openapis.org/oas/latest.html"
+    },
+    {
+      "title": "Arena: coding agents harness tax",
+      "url": "https://arena.ai/blog/coding-agents-harness-tax"
+    },
+    {
+      "title": "Temporal: Workflow Definition",
+      "url": "https://docs.temporal.io/workflow-definition"
+    },
+    {
+      "title": "Temporal: Glossary (idempotency)",
+      "url": "https://docs.temporal.io/glossary"
+    },
+    {
+      "title": "VS Code custom instructions",
+      "url": "https://code.visualstudio.com/docs/agent-customization/custom-instructions"
     }
   ]
 }
