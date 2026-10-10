@@ -5,7 +5,7 @@ name: Check links
 
 on:
   schedule:
-    - cron: "0 23 * * *" # Every day 23:00 UTC (07:00 Taiwan)
+    - cron: "17 23 * * *" # Every day 23:17 UTC (07:17 Taiwan), off the hour when GitHub delays runs the most
   push:
     paths:
       - links.json
