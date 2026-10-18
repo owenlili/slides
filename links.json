@@ -23,6 +23,14 @@
     {
       "title": "Lecture 5: Frameworks and Orchestration",
       "url": "https://web.stanford.edu/class/cs329z/slides/lecture05.pdf"
+    },
+    {
+      "title": "Lecture 6: Agent Design Patterns and Scaffolds",
+      "url": "https://web.stanford.edu/class/cs329z/slides/lecture06.pdf"
+    },
+    {
+      "title": "Lecture 7: Agent Memory Architectures",
+      "url": "https://web.stanford.edu/class/cs329z/slides/lecture07.pdf"
     }
   ],
   "papers": [
@@ -93,6 +101,110 @@
     {
       "title": "Meta-Harness",
       "url": "https://arxiv.org/pdf/2603.28052"
+    },
+    {
+      "title": "Reflexion",
+      "url": "https://arxiv.org/abs/2303.11366"
+    },
+    {
+      "title": "Self-Refine",
+      "url": "https://arxiv.org/abs/2303.17651"
+    },
+    {
+      "title": "Multiagent Debate",
+      "url": "https://arxiv.org/abs/2305.14325"
+    },
+    {
+      "title": "Magentic-One",
+      "url": "https://arxiv.org/abs/2411.04468"
+    },
+    {
+      "title": "SWE-smith",
+      "url": "https://arxiv.org/abs/2504.21798"
+    },
+    {
+      "title": "Retrieval-Augmented Generation (RAG)",
+      "url": "https://arxiv.org/abs/2005.11401"
+    },
+    {
+      "title": "RAPTOR",
+      "url": "https://arxiv.org/abs/2401.18059"
+    },
+    {
+      "title": "GraphRAG (From Local to Global)",
+      "url": "https://arxiv.org/abs/2404.16130"
+    },
+    {
+      "title": "Late Chunking",
+      "url": "https://arxiv.org/abs/2409.04701"
+    },
+    {
+      "title": "Recursive Language Models",
+      "url": "https://arxiv.org/abs/2512.24601"
+    },
+    {
+      "title": "ReAct",
+      "url": "https://arxiv.org/pdf/2210.03629"
+    },
+    {
+      "title": "ReWOO",
+      "url": "https://arxiv.org/pdf/2305.18323"
+    },
+    {
+      "title": "CodeAct",
+      "url": "https://arxiv.org/pdf/2402.01030"
+    },
+    {
+      "title": "OpenHands (ICLR 2025)",
+      "url": "https://arxiv.org/pdf/2407.16741v3"
+    },
+    {
+      "title": "Archon",
+      "url": "https://arxiv.org/pdf/2409.15254"
+    },
+    {
+      "title": "Observation masking (Lindenbauer et al.)",
+      "url": "https://arxiv.org/pdf/2508.21433v3"
+    },
+    {
+      "title": "STORM (NAACL 2024)",
+      "url": "https://aclanthology.org/2024.naacl-long.347.pdf"
+    },
+    {
+      "title": "MemGPT",
+      "url": "https://arxiv.org/pdf/2310.08560"
+    },
+    {
+      "title": "CoALA",
+      "url": "https://arxiv.org/pdf/2309.02427"
+    },
+    {
+      "title": "Generative Agents",
+      "url": "https://arxiv.org/pdf/2304.03442"
+    },
+    {
+      "title": "Voyager",
+      "url": "https://arxiv.org/pdf/2305.16291"
+    },
+    {
+      "title": "MemoryOS",
+      "url": "https://arxiv.org/pdf/2506.06326"
+    },
+    {
+      "title": "A-Mem",
+      "url": "https://arxiv.org/pdf/2502.12110"
+    },
+    {
+      "title": "Mem0",
+      "url": "https://arxiv.org/pdf/2504.19413"
+    },
+    {
+      "title": "Jiang et al. 2025",
+      "url": "https://arxiv.org/pdf/2504.14225v2"
+    },
+    {
+      "title": "MemoryArena",
+      "url": "https://arxiv.org/pdf/2602.16313"
     }
   ],
   "articles": [
@@ -127,6 +239,50 @@
     {
       "title": "VS Code custom instructions",
       "url": "https://code.visualstudio.com/docs/agent-customization/custom-instructions"
+    },
+    {
+      "title": "OSWorld",
+      "url": "https://os-world.github.io/"
+    },
+    {
+      "title": "AutoLibra project page",
+      "url": "https://autolibra.org/"
+    },
+    {
+      "title": "Introducing Contextual Retrieval (Anthropic)",
+      "url": "https://www.anthropic.com/engineering/contextual-retrieval"
+    },
+    {
+      "title": "ToolBench",
+      "url": "https://github.com/OpenBMB/ToolBench"
+    },
+    {
+      "title": "Building Effective Agents (Anthropic)",
+      "url": "https://www.anthropic.com/engineering/building-effective-agents"
+    },
+    {
+      "title": "Pi: Skills",
+      "url": "https://pi.dev/docs/latest/skills"
+    },
+    {
+      "title": "Pi: Security",
+      "url": "https://pi.dev/docs/latest/security"
+    },
+    {
+      "title": "Pi: Compaction",
+      "url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/compaction.md"
+    },
+    {
+      "title": "Agent Skills overview (Claude)",
+      "url": "https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview"
+    },
+    {
+      "title": "Zep",
+      "url": "https://www.getzep.com/"
+    },
+    {
+      "title": "Tool legibility",
+      "url": "https://github.com/lopopolo/harness-engineering/blob/226c8d35fb6ea3ed55467753dba6dea2b5fd5778/docs/tool-legibility/README.md"
     }
   ]
 }
