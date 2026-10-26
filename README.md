@@ -12,7 +12,7 @@ Checks every day that the external links cited in the [CS 329Z learning notes](h
 
 To check another link, add an entry with a `title` and `url` to the right group.
 
-Links that the check cannot open, such as sites that refuse automated requests, are kept out of `links.json` and recorded in [problem-links.md](problem-links.md).
+Links that open in a browser but that the check cannot verify, because the site refuses automated requests, are kept out of `links.json` and checked by hand instead. [problem-links.md](problem-links.md) lists them.
 
 ## When it runs
 
