@@ -31,6 +31,14 @@
     {
       "title": "Lecture 7: Agent Memory Architectures",
       "url": "https://web.stanford.edu/class/cs329z/slides/lecture07.pdf"
+    },
+    {
+      "title": "Lecture 8: Multi-Agent Systems",
+      "url": "https://web.stanford.edu/class/cs329z/slides/lecture08.pdf"
+    },
+    {
+      "title": "Lecture 9: Optimization",
+      "url": "https://web.stanford.edu/class/cs329z/slides/lecture09.pdf"
     }
   ],
   "papers": [
@@ -205,6 +213,82 @@
     {
       "title": "MemoryArena",
       "url": "https://arxiv.org/pdf/2602.16313"
+    },
+    {
+      "title": "Fantastically Ordered Prompts (ACL 2022)",
+      "url": "https://aclanthology.org/2022.acl-long.556/"
+    },
+    {
+      "title": "MIPROv2 (EMNLP 2024)",
+      "url": "https://aclanthology.org/2024.emnlp-main.525/"
+    },
+    {
+      "title": "Evaluating Verifiability in Generative Search Engines",
+      "url": "https://arxiv.org/abs/2304.09848"
+    },
+    {
+      "title": "Test-time training",
+      "url": "https://arxiv.org/abs/2305.18466"
+    },
+    {
+      "title": "Lost in the Middle",
+      "url": "https://arxiv.org/abs/2307.03172"
+    },
+    {
+      "title": "AutoGen",
+      "url": "https://arxiv.org/abs/2308.08155"
+    },
+    {
+      "title": "Dynamic LLM-Powered Agent Network (DyLAN)",
+      "url": "https://arxiv.org/abs/2310.02170"
+    },
+    {
+      "title": "Dynamic LLM-Powered Agent Network (arXiv HTML)",
+      "url": "https://arxiv.org/html/2310.02170v2"
+    },
+    {
+      "title": "DeepSeekMath (GRPO)",
+      "url": "https://arxiv.org/abs/2402.03300"
+    },
+    {
+      "title": "Why Do Multi-Agent LLM Systems Fail?",
+      "url": "https://arxiv.org/abs/2503.13657"
+    },
+    {
+      "title": "Darwin Gödel Machine",
+      "url": "https://arxiv.org/abs/2505.22954"
+    },
+    {
+      "title": "G-Memory",
+      "url": "https://arxiv.org/abs/2506.07398"
+    },
+    {
+      "title": "Verbalized Sampling",
+      "url": "https://arxiv.org/abs/2510.01171"
+    },
+    {
+      "title": "Artificial Hivemind",
+      "url": "https://arxiv.org/abs/2510.22954"
+    },
+    {
+      "title": "Artificial Hivemind (arXiv HTML)",
+      "url": "https://arxiv.org/html/2510.22954v2"
+    },
+    {
+      "title": "Towards a Science of Scaling Agent Systems",
+      "url": "https://arxiv.org/abs/2512.08296"
+    },
+    {
+      "title": "CooperBench",
+      "url": "https://arxiv.org/abs/2601.13295"
+    },
+    {
+      "title": "CooperBench (arXiv HTML)",
+      "url": "https://arxiv.org/html/2601.13295v1"
+    },
+    {
+      "title": "MetaGPT (OpenReview)",
+      "url": "https://openreview.net/forum?id=VtmBAGCN7o"
     }
   ],
   "articles": [
@@ -283,6 +367,74 @@
     {
       "title": "Tool legibility",
       "url": "https://github.com/lopopolo/harness-engineering/blob/226c8d35fb6ea3ed55467753dba6dea2b5fd5778/docs/tool-legibility/README.md"
+    },
+    {
+      "title": "A2A: Key concepts",
+      "url": "https://a2a-protocol.org/latest/topics/key-concepts/"
+    },
+    {
+      "title": "CellCog: Agent Handoffs vs Agents as Tools",
+      "url": "https://cellcog.ai/blog/agent-handoffs-vs-agents-as-tools/"
+    },
+    {
+      "title": "Claude 2.1 prompting (Anthropic)",
+      "url": "https://claude.com/resources/articles/claude-2-1-prompting"
+    },
+    {
+      "title": "Claude Code: Memory",
+      "url": "https://code.claude.com/docs/en/memory"
+    },
+    {
+      "title": "Claude Code: Skills",
+      "url": "https://code.claude.com/docs/en/skills"
+    },
+    {
+      "title": "Google Codelabs",
+      "url": "https://codelabs.developers.google.com/"
+    },
+    {
+      "title": "OpenAI: Agent orchestration",
+      "url": "https://developers.openai.com/api/docs/guides/agents/orchestration"
+    },
+    {
+      "title": "Temporal: Activity Definition (idempotency)",
+      "url": "https://docs.temporal.io/activity-definition"
+    },
+    {
+      "title": "GPTZero: hallucinated citations in NeurIPS",
+      "url": "https://gptzero.me/news/neurips/"
+    },
+    {
+      "title": "ThreadSafe",
+      "url": "https://medium.com/threadsafe/"
+    },
+    {
+      "title": "METR/Redwood: OpenAI–Hugging Face incident investigation",
+      "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/"
+    },
+    {
+      "title": "OpenAI: Building self-improving tax agents with Codex",
+      "url": "https://openai.com/index/building-self-improving-tax-agents-with-codex/"
+    },
+    {
+      "title": "Thinking Machines: On-Policy Distillation",
+      "url": "https://thinkingmachines.ai/blog/on-policy-distillation/"
+    },
+    {
+      "title": "Building a C compiler with parallel Claudes (Anthropic)",
+      "url": "https://www.anthropic.com/engineering/building-c-compiler"
+    },
+    {
+      "title": "Patterns and problems in emerging multiagent systems (Anthropic)",
+      "url": "https://www.anthropic.com/research/multiagent-systems"
+    },
+    {
+      "title": "Cerebras: How to Stop Your Autoresearch Loop from Cheating",
+      "url": "https://www.cerebras.ai/blog/how-to-stop-your-autoresearch-loop-from-cheating"
+    },
+    {
+      "title": "A Retrospective on the ICLR 2026 Review Process",
+      "url": "https://blog.iclr.cc/2026/03/31/a-retrospective-on-the-iclr-2026-review-process/"
     }
   ]
 }
