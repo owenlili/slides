@@ -12,6 +12,8 @@ Checks every day that the external links cited in the [CS 329Z learning notes](h
 
 To check another link, add an entry with a `title` and `url` to the right group.
 
+Links that the check cannot open, such as sites that refuse automated requests, are kept out of `links.json` and recorded in [problem-links.md](problem-links.md).
+
 ## When it runs
 
 A [workflow](.github/workflows/links.yml) checks every URL in `links.json` each day at 07:17 Taiwan time (23:17 UTC), and whenever `links.json` changes. GitHub may start it later than that when it is busy. It can also be started from the Actions tab.
